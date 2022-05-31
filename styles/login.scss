@@ -1,62 +1,59 @@
-.main{
+.main {
     display: flex;
-
-    .lado_direito{
+    .lado_direito {
         width: 50%;
         background-image: url("../imagens/jonas-vincent-xulIYVIbYIc-unsplash.jpg");
         height: 100vh;
         background-position: center;
         background-size: cover;
-
     }
-    .lado_esquerdo{
-    display: flex;
-    width: 50%;
-    background-color: #E5E5E5 ;
-    flex-direction: column;
-    justify-content: center;
+    .lado_esquerdo {
+        display: flex;
+        width: 50%;
+        background-color: $cor_fundo;
+        flex-direction: column;
+        justify-content: center;
         text-align: center;
         align-items: center;
         vertical-align: middle;
-    .logo{
-        img{
-            width: 50%;
-        }
-    }
-    form{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        
-
-        input{
-            padding: 15px;
-            margin: 5px;
-            border-radius: 999px;
-            outline: none;
-            border: none;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 300;
-        }
-        .btn{
-            background-color: #613387;
-            padding: 15px;
-            color: #fff;
-            border-radius: 999px;
-            border: none;
-            outline: none;
-            margin: 5px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 300;
-            &:hover{
-                background-color: #391e50;
+        .logo {
+            img {
+                width: 50%;
             }
-
-
         }
-
-
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            input {
+                padding: 15px;
+                margin: 5px;
+                border-radius: 999px;
+                outline: none;
+                border: none;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
+                transition: 1s;
+                &:focus {
+                    outline-color: #391e50;
+                    border: 1px solid $cor_principal;
+                }
+            }
+            .btn {
+                background-color: $cor_principal;
+                padding: 15px;
+                color: #fff;
+                border-radius: 999px;
+                border: none;
+                outline: none;
+                margin: 5px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
+                transition: 1s;
+                &:hover {
+                    background-color: #391e50;
+                }
+            }
+        }
     }
-    }
-
 }

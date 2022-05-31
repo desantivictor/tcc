@@ -55,6 +55,13 @@
   border: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main .lado_esquerdo form input:focus {
+  outline-color: #391e50;
+  border: 1px solid #613387;
 }
 
 .main .lado_esquerdo form .btn {
@@ -67,6 +74,8 @@
   margin: 5px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .main .lado_esquerdo form .btn:hover {

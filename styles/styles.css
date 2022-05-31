@@ -1,3 +1,23 @@
+@charset "UTF-8";
+/*Importando o css geral de todas as paginas*/
+/*configurando variaveis das cores*/
+/*Resetando as configurações do css padrao do navegador*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: #613387;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px;
+}
+
+/*Importando o css da pagina de login e cadastro*/
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,6 +75,13 @@
   border: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main .lado_esquerdo form input:focus {
+  outline-color: #391e50;
+  border: 1px solid #613387;
 }
 
 .main .lado_esquerdo form .btn {
@@ -67,24 +94,11 @@
   margin: 5px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .main .lado_esquerdo form .btn:hover {
   background-color: #391e50;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-a {
-  color: #613387;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: 'Montserrat', sans-serif;
-  margin: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

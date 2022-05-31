@@ -1,14 +1,7 @@
-@import"login.scss";
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/*Importando o css geral de todas as paginas*/
 
-a {
-    color: #613387;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    margin: 10px;
-}
+@import"geral.scss";
+
+/*Importando o css da pagina de login e cadastro*/
+
+@import"login.scss";
