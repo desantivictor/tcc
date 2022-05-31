@@ -1,0 +1,20 @@
+/* inicializando variaveis */
+
+$cor_principal: #613387;
+$cor_secundaria:  #391e50;
+$cor_fundo: #E5E5E5;
+$quebra_tablet: 768px;
+$quebra_celular: 480px;
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: #613387;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}

@@ -1,0 +1,16 @@
+/* inicializando variaveis */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: #613387;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px;
+}
+/*# sourceMappingURL=geral.css.map */
