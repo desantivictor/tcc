@@ -24,12 +24,38 @@ a {
   display: flex;
 }
 
+@media screen and (max-width: 480px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .main .lado_direito {
   width: 50%;
   background-image: url("../imagens/jonas-vincent-xulIYVIbYIc-unsplash.jpg");
   height: 100vh;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .main .lado_direito {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main .lado_direito {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+    height: 200px;
+  }
 }
 
 .main .lado_esquerdo {
@@ -50,6 +76,19 @@ a {
       -ms-flex-align: center;
           align-items: center;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  .main .lado_esquerdo {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main .lado_esquerdo {
+    width: 100%;
+    height: calc(100vh - 200px);
+  }
 }
 
 .main .lado_esquerdo .logo img {

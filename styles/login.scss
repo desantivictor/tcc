@@ -1,11 +1,22 @@
 .main {
     display: flex;
+    @media screen and (max-width: $breakpoint-celular) {
+        flex-direction: column;
+    }
     .lado_direito {
         width: 50%;
         background-image: url("../imagens/jonas-vincent-xulIYVIbYIc-unsplash.jpg");
         height: 100vh;
         background-position: center;
         background-size: cover;
+        @media screen and (max-width: $breakpoint-tablet) {
+            width: 30%;
+        }
+        @media screen and (max-width: $breakpoint-celular) {
+            flex-direction: column-reverse;
+            width: 100%;
+            height: 200px;
+        }
     }
     .lado_esquerdo {
         display: flex;
@@ -16,6 +27,13 @@
         text-align: center;
         align-items: center;
         vertical-align: middle;
+        @media screen and (max-width: $breakpoint-tablet) {
+            width: 80%;
+        }
+        @media screen and (max-width: $breakpoint-celular) {
+            width: 100%;
+            height: calc(100vh - 200px);
+        }
         .logo {
             img {
                 width: 50%;
@@ -35,7 +53,7 @@
                 font-weight: 300;
                 transition: 1s;
                 &:focus {
-                    outline-color: #391e50;
+                    outline-color: $cor_segundaria;
                     border: 1px solid $cor_principal;
                 }
             }
@@ -51,7 +69,7 @@
                 font-weight: 300;
                 transition: 1s;
                 &:hover {
-                    background-color: #391e50;
+                    background-color: $cor_segundaria;
                 }
             }
         }
