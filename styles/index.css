@@ -2,7 +2,7 @@ body {
   background-color: #FFE4E1;
 }
 
-.hater {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,7 +19,7 @@ body {
           justify-content: center;
 }
 
-.hater p {
+.header p {
   color: aliceblue;
 }
 
