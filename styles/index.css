@@ -28,6 +28,7 @@ body {
 }
 
 .navbar .mobile-menu {
+  display: none;
   cursor: pointer;
 }
 
@@ -103,5 +104,28 @@ body {
 .container img {
   width: 50%;
   max-height: 500px;
+}
+
+@media (max-width: 999px) {
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background-color: #23232e;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .nav-list li {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */

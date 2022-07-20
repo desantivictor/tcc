@@ -131,6 +131,7 @@ a {
 
 body {
   background-color: #FFE4E1;
+  overflow-x: hidden;
 }
 
 .navbar nav {
@@ -154,6 +155,7 @@ body {
 }
 
 .navbar .mobile-menu {
+  display: none;
   cursor: pointer;
 }
 
