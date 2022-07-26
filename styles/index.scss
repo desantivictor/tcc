@@ -42,20 +42,6 @@ body {
             letter-spacing: 0px;
             margin-left: 32px;
         }
-        @media (max-width: $quebra_tablet) {
-            position: absolute;
-            top: 8vh;
-            right: 0;
-            width: 50vw;
-            height: 92vh;
-            background-color: #23232e;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            li {
-                margin-left: 0;
-            }
-        }
     }
     a {
         color: #fff;
@@ -92,5 +78,30 @@ body {
     img {
         width: 50%;
         max-height: 500px;
+    }
+}
+
+@media (max-width: $quebra_tablet) {
+    body{
+        overflow: hidden;
+    }
+    .nav-list{
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background-color: #23232e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+        li {
+        margin-left: 0;
+        opacity: 0;
+        }
+    .mobile-menu{
+        display: block;
+    }
     }
 }
