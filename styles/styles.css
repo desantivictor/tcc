@@ -1,3 +1,4 @@
+/*-----------------inicializando geral-----------------*/
 /* inicializando variaveis */
 * {
   margin: 0;
@@ -14,6 +15,8 @@ a {
   margin: 10px;
 }
 
+/*-----------------Fim geral-----------------*/
+/*-----------------inicializando Login-----------------*/
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,11 +127,8 @@ a {
   background-color: #391e50;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
+/*-----------------Fim Login-----------------*/
+/*-----------------inicializando index-----------------*/
 body {
   font-family: 'Roboto' , sans-serif;
   background-color: #FFE4E1;
@@ -260,12 +260,13 @@ body {
   body {
     overflow: hidden;
   }
-  .nav-list {
+  .navbar .nav-list {
     position: absolute;
     top: 8vh;
     right: 0;
     width: 50vw;
-    height: 92vh;
+    height: 100vh;
+    position: fixed;
     background-color: #23232e;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -277,15 +278,15 @@ body {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .nav-list .mobile-menu {
-    display: block;
-  }
-  .nav-list li {
+  .navbar .nav-list li {
+
     margin-left: 0;
     opacity: 0;
   }
-  .nav-list .mobile-menu {
+  .navbar .mobile-menu {
     display: block;
   }
 }
+
+/*-----------------Fim Login-----------------*/
 /*# sourceMappingURL=styles.css.map */
