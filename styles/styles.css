@@ -130,6 +130,7 @@ a {
 }
 
 body {
+  font-family: 'Roboto' , sans-serif;
   background-color: #FFE4E1;
 }
 
@@ -142,7 +143,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #23232e;
   height: 12vh;
   width: 100%;
@@ -182,6 +182,11 @@ body {
   margin-left: 32px;
 }
 
+.navbar .nav-list li a {
+  font-family: 'Roboto', sans-serif;
+  font-size: medium;
+}
+
 .navbar a {
   color: #fff;
   text-decoration: none;
@@ -199,13 +204,31 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: first baseline;
+      -ms-flex-pack: first baseline;
+          justify-content: first baseline;
+  font-size: 30px;
+  padding-left: 30px;
 }
 
 .header p {
   color: aliceblue;
+}
+
+.header .btn {
+  background-color: #23232e;
+  font-family: 'Roboto' , sans-serif;
+  padding: 15px;
+  color: #fff;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  margin: 5px;
+  font-weight: 300;
+}
+
+.header .btn:hover {
+  background-color: #391e50;
 }
 
 .container {
@@ -253,6 +276,9 @@ body {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .nav-list .mobile-menu {
+    display: block;
   }
   .nav-list li {
     margin-left: 0;
