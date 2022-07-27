@@ -99,10 +99,6 @@ body {
 }
 
 @media (max-width: $quebra_tablet) {
-    body {
-        overflow: hidden;
-    }
-
     .navbar {
         .nav-list {
             position: absolute;
@@ -115,6 +111,8 @@ body {
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
+            transform: translate(100%);
+            transition: transform 0.3 ease-in;
             li {
                 margin-left: 0;
                 opacity: 0;
@@ -124,5 +122,18 @@ body {
             display: block;
 
         }
+        .nav-list.active{
+            transform: translate(0);
+        }
+    }
+}
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translate(50px);    
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
