@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/imagens/favicon.png">
+    <link rel="stylesheet" href="./splide/css/splide.min.css">
+    <script type="text/javascript" src="./splide/js/splide.min.js"></script>
     <title>Melhor amigo</title>
 </head>
 
@@ -42,13 +44,58 @@
     <div class="container">
         <section class="about">
             <div class="lado_texto">
-                <h1>Quem Somos?</h1>
+                <h1>Quem <span class="destaque">Somos?</span></h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor qui similique numquam obcaecati, omnis ad, pariatur reprehenderit cumque, repellendus excepturi laboriosam fugiat beatae ipsa impedit porro repellat officiis reiciendis aperiam.</p>
             </div>
-            <img src="./imagens/imagem_cachorro_touca2.png" alt="imagem de cachorro touca">
+            <div class="lado_imagem">
+            </div>
+        </section>
+
+        <section class="splide" style="margin: 50px 0;" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <a href="#">
+                            <img src="imagens/Slide 1.png">
+                            <h2 style="text-align: center; position: relative; left: 10px; padding: 10px; margin: 10px;">Se cadastre em nosso site</h2>
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="#">
+                            <img src="imagens/Slide 2.png">
+                            <h2 style="text-align: center; position: relative; left: 10px; padding: 10px; margin: 10px;">Escolha seu novo melhor amigo</h2>
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="#">
+                            <img src="imagens/Slide 3.png">
+                            <h2 style="text-align: center; position: relative; left: 10px; padding: 10px; margin: 10px;">Busque seu amigo</h2>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
         </section>
     </div>
 
 </body>
 
 </html>
+
+<script>
+    new Splide('.splide').mount();
+    var splide = new Splide('.splide', {
+        perPage: 3,
+        rewind: true,
+        breakpoints: {
+            770: {
+                perPage: 2,
+            },
+            500: {
+                perPage: 1,
+            },
+        }
+    });
+
+    splide.mount();
+</script>
