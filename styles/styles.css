@@ -59,7 +59,7 @@ a {
 
 .main .lado_direito {
   width: 50%;
-  background-image: url("../imagens/jonas-vincent-xulIYVIbYIc-unsplash.jpg");
+  background-image: url("../imagens/imagem_login.jpg");
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -162,6 +162,7 @@ body {
 
 /*Menu*/
 .navbar nav {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,15 +171,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #23232e;
+  background-color: #DDA0DD;
   height: 12vh;
   width: 100%;
 }
 
 .navbar .logo {
-  font-size: 24px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
+  margin-left: 0px;
+}
+
+.navbar .logo img {
+  width: 270px;
 }
 
 .navbar .mobile-menu {
@@ -210,13 +213,14 @@ body {
 }
 
 .navbar .nav-list li a {
-  font-family: 'Roboto', sans-serif;
-  font-size: medium;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
 }
 
 .navbar a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
+  margin-top: 70px;
 }
 
 /*Header*/
@@ -224,7 +228,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(../imagens/imagem_fundo1.avif);
+  background-image: url(../imagens/imagem_fundo2.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -237,17 +241,18 @@ body {
           justify-content: first baseline;
   font-size: 30px;
   padding-left: 30px;
+  padding-top: 200px;
 }
 
 .header p {
-  color: aliceblue;
+  color: #fff;
 }
 
 .header .btn {
-  background-color: #23232e;
+  background-color: #DDA0DD;
   font-family: 'Roboto', sans-serif;
   padding: 15px;
-  color: #fff;
+  color: #000000;
   border-radius: 999px;
   border: none;
   outline: none;
@@ -305,7 +310,7 @@ body {
 .container .about .lado_imagem {
   width: 50%;
   height: 500px;
-  background-color: #23232e;
+  background-color: #DDA0DD;
   background-image: url(../imagens/imagem_cachorro_touca2.png);
 }
 
@@ -326,9 +331,9 @@ body {
     top: 8vh;
     right: 0;
     width: 50vw;
-    height: 100vh;
+    height: 95vh;
     position: fixed;
-    background-color: #23232e;
+    background-color: #DDA0DD;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
