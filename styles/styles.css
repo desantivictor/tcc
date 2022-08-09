@@ -162,6 +162,7 @@ body {
 
 /*Menu*/
 .navbar nav {
+  z-index: 1;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,6 +290,7 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-right: 15px;
+  margin-bottom: 250px;
 }
 
 .container .about .lado_texto {
@@ -327,11 +329,39 @@ body {
 }
 
 .container .about .splide {
+  z-index: 0;
   margin: 50px 0 !important;
+}
+
+.container .area_comentarios {
+  margin: 30px;
+  margin-top: 250px;
+}
+
+.container .area_comentarios h1 {
+  color: #9932CC;
+  text-align: center;
+  font-size: 60px;
+}
+
+.container .area_comentarios .comentarios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .area_comentarios .comentarios div {
+  text-align: justify;
+  margin: 15px;
+  border: 10px solid #9932CC;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 60px;
 }
 
 @media (max-width: 768px) {
   .navbar .nav-list {
+    z-index: 1;
     position: absolute;
     top: 8vh;
     right: 0;
