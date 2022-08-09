@@ -288,6 +288,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-right: 15px;
 }
 
 .container .about .lado_texto {
@@ -305,6 +306,10 @@ body {
 
 .container .about .lado_texto h1 {
   font-size: 2rem;
+}
+
+.container .about .lado_texto p {
+  margin-top: 15px;
 }
 
 .container .about .lado_imagem {

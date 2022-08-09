@@ -101,6 +101,7 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: row;
+        margin-right: 15px;
         .lado_texto {
             width: 50%;
             min-width: 500px;
@@ -111,6 +112,9 @@ body {
             }
             h1 {
                 font-size: 2rem;
+            }
+            p{
+                margin-top: 15px;
             }
         }
         .lado_imagem {
