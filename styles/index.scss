@@ -129,19 +129,21 @@ body {
                 height: 400px;
             }
         }
+        /* carrosel */
         .splide {
             z-index: 0;
             margin: 50px 0!important;
 
         }
     }
+
+    /* comentarios */
     .area_comentarios{
         margin: 30px;
         margin-top: 250px;
         h1{
-            color:#9932CC;
             text-align: center;
-            font-size: 60px;
+            font-size: 50px;
         }
         .comentarios{
             display: flex;
@@ -158,6 +160,7 @@ body {
     }
 }
 
+/* adaptaçã para celular */
 @media (max-width: $quebra_tablet) {
     .navbar {
         .nav-list {
