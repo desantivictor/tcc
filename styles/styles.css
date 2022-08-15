@@ -176,6 +176,8 @@ a {
   background-color: #DDA0DD;
   height: 12vh;
   width: 100%;
+  position: absolute;
+  top: 0;
 }
 
 .navbar .logo {
@@ -223,19 +225,48 @@ a {
 
 /* estilo dos cards */
 .cards {
-  margin: 50px;
-  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards .card {
+  margin: 0 20px;
+  margin-top: 100px;
+  width: 20%;
+  min-width: 200px;
   background-color: white;
   border-radius: 10px;
 }
 
-.cards .img_card {
+.cards .card a {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.cards .card .img_card {
   width: 100%;
 }
 
-.cards .img_card img {
+.cards .card .img_card img {
   border-radius: 10px 10px 0 0;
   width: 100%;
+}
+
+.cards .card .texto_card {
+  padding: 10px;
+}
+
+.cards .card .texto_card h3 {
+  color: #613387;
+  text-transform: uppercase;
+  margin-bottom: 5px;
 }
 
 /* adaptação da barra de navegação para celular ou tablet */

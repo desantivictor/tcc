@@ -10,6 +10,8 @@
         background-color: #DDA0DD;
         height: 12vh;
         width: 100%;
+        position: absolute;
+        top: 0;
     }
     .logo {
         margin-left: 0px;
@@ -48,23 +50,44 @@
     }
 }
 /* estilo dos cards */
-
 .cards{
-    margin: 50px;
-    width: 200px;
-    background-color: white;
-    border-radius: 10px;
-    .img_card{
-        width: 100%;
-        img{
-            border-radius: 10px 10px 0 0 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .card{
+        margin: 0 20px;
+        margin-top: 100px;
+        width: 20%;
+        min-width: 200px;
+        background-color: white;
+        border-radius: 10px;
+
+        a{
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+        .img_card{
             width: 100%;
+            img{
+                border-radius: 10px 10px 0 0 ;
+                width: 100%;
+
+            }
 
         }
+        .texto_card{
+            padding: 10px;
+            h3{
+                color: $cor_principal;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+            }
+        }
+
 
     }
-
-
 }
 
 
