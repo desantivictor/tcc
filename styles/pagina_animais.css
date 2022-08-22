@@ -1,0 +1,23 @@
+body
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: first baseline;
+      -ms-flex-pack: first baseline;
+          justify-content: first baseline;
+  font-size: 30px;
+  padding: 30px;
+}
+
+body
+.container .lado_texto {
+  padding: 35px;
+  margin-bottom: 100px;
+}
+/*# sourceMappingURL=pagina_animais.css.map */
