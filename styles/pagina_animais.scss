@@ -31,7 +31,7 @@ body{
     a.hover {
         opacity: 0.7;
     }
-    .nav-list2 {
+    .nav-list {
         list-style: none;
         display: flex;
         li {
@@ -53,7 +53,6 @@ body{
 
 .container{
     display: flex;
-    align-items: center;
     justify-content: first baseline;
     padding: 100px 30px;
     flex-wrap: wrap;
@@ -69,11 +68,12 @@ body{
         }
     }
     .lado_texto{
-        padding: 100px 35px;
+        padding: 30px 35px;
+        justify-content: space-around;
         text-align: justify;
         width: 50%;
         h1{
-            padding-bottom: 60px;
+            padding-bottom: 50px;
             color: $cor_principal;
             font-family: 'Josefin Sans', sans-serif;
             font-size: xx-large;
@@ -88,13 +88,13 @@ body{
         }
         p{
             padding-top: 20px;
-            padding-bottom: 90px;
+            padding-bottom: 50px;
             font-family: 'Lora', serif;
         }
         .btn {
             width: 500px;
             background-color: $cor_principal;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Lora', serif;
             padding: 15px;
             color: white;
             border-radius: 999px;
@@ -104,6 +104,9 @@ body{
             font-weight: 300;
             &:hover {
                 background-color: $cor_secundaria;
+            }
+            @media (max-width: $quebra_tablet) {
+                width: 100%;
             }
         }
         @media (max-width: $quebra_tablet) {
@@ -116,7 +119,7 @@ body{
 /* adaptação da barra de navegação para celular ou tablet */
 @media (max-width: $quebra_tablet) {
     .navbar {
-        .nav-list2 {
+        .nav-list{
             z-index: 1;
             position: absolute;
             top: 8vh;
@@ -124,7 +127,7 @@ body{
             width: 50vw;
             height: 95vh;
             position: fixed;
-            background-color: #DDA0DD;
+            background-color: white;
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
