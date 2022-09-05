@@ -267,4 +267,160 @@ body {
 }
 
 /*-----------------Fim pagina_animais-----------------*/
+/*--------------- inicio pagina_usuario---------------*/
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .lado_txt {
+  padding-top: 100px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #E5E5E5;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+}
+
+.main .lado_txt h1 {
+  color: #613387;
+  font-family: 'Lora', serif;
+}
+
+.main .lado_txt form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  padding-top: 50px;
+  font-family: 'Lora', serif;
+}
+
+.main .lado_txt form input {
+  padding: 15px;
+  margin: 5px;
+  border-radius: 999px;
+  outline: none;
+  border: none;
+  font-family: 'Lora', serif;
+  font-weight: 300;
+}
+
+.main .lado_txt form p {
+  font-family: 'Lora', serif;
+}
+
+.main .lado_txt form .btn {
+  background-color: #613387;
+  padding: 15px;
+  color: #fff;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  margin: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.main .lado_txt form .btn:hover {
+  background-color: #391e50;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    width: 100%;
+    height: calc(100vh - 100px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.main .lado_animais {
+  text-align: center;
+}
+
+.main .lado_animais h1 {
+  margin-top: 50px;
+  color: #613387;
+  font-family: 'Lora', serif;
+}
+
+.main .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .cards .card {
+  margin: 0 20px;
+  margin-top: 70px;
+  width: 20%;
+  min-width: 200px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.main .cards .card a {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.main .cards .card .img_card {
+  width: 100%;
+}
+
+.main .cards .card .img_card img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.main .cards .card .texto_card {
+  padding: 10px;
+}
+
+.main .cards .card .texto_card h3 {
+  color: #613387;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+/*---------------Fim pagina_usuario------------*/
 /*# sourceMappingURL=styles2.css.map */

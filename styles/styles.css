@@ -696,6 +696,7 @@ body {
   .navbar .nav-list li {
     margin-left: 0;
     opacity: 0;
+    font-size: medium;
   }
   .navbar .nav-list .mobile-menu {
     display: block;
