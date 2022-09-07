@@ -114,6 +114,31 @@
     
         }
     }
+    .btn_publicar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .btn{
+            background-color: $cor_principal;
+            padding: 20px 40px;
+            color: #fff;
+            border-radius: 999px;
+            border: none;
+            outline: none;
+            margin: 70px;
+            font-size: larger;
+            font-family: 'Lora', serif;
+            font-weight: 300;
+            &:hover{
+                background-color: $cor_secundaria;
+            }
+
+
+
+        }
+        
+    }
+    
     
 }
 

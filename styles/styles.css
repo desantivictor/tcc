@@ -516,11 +516,12 @@ body {
 .navbar .nav-list li {
   letter-spacing: 0px;
   margin-left: 32px;
+  font-size: 15px;
 }
 
 .navbar .nav-list li a {
   font-family: 'Poppins', sans-serif;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .navbar a {
@@ -696,7 +697,6 @@ body {
   .navbar .nav-list li {
     margin-left: 0;
     opacity: 0;
-    font-size: medium;
   }
   .navbar .nav-list .mobile-menu {
     display: block;

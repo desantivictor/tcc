@@ -1,0 +1,82 @@
+body{
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        .lado_txt{
+            padding-top: 100px;
+            margin: 0;
+            display: flex;
+            width: 100%;
+            background-color: $cor_fundo ;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            vertical-align: middle;
+            
+            h1{
+                color: $cor_principal;
+                font-family: 'Lora', serif;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                padding-top: 50px;
+                font-family: 'Lora', serif;
+                select{
+                    margin: 15px;
+                    border-radius: 15px;
+                    border-style: none;
+                    padding: 15px;
+                }
+                input{
+                    padding: 15px;
+                    margin-bottom: 10px;
+                    margin: 5px;
+                    border-radius: 999px;
+                    outline: none;
+                    border: none;
+                    font-family: 'Lora', serif;
+                    font-weight: 300;
+                }
+                p{
+                    padding-top: 20px;
+                    font-family: 'Lora', serif;
+                }
+                textarea{
+                    border-radius: 30px;
+                    border-style: none;
+                    padding: 20px;
+                }
+                .btn{
+                    
+                    background-color: $cor_principal;
+                    padding: 15px;
+                    color: #fff;
+                    border-radius: 999px;
+                    border: none;
+                    outline: none;
+                    margin: 30px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 300;
+                    &:hover{
+                        background-color: $cor_secundaria;
+                    }
+        
+        
+                }
+            }
+    
+        }
+        @media screen and (max-width: $quebra_tablet) {
+            width: 100%;
+        }
+        @media screen and (max-width: $quebra_celular) {
+            width: 100%;
+            height: calc(100vh - 100px);
+        }
+        @media screen and (max-width: $quebra_celular) {
+            flex-direction: column;
+        }
+    }
+}
