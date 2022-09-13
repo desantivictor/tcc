@@ -22,7 +22,7 @@ class RepositorioClienteMySQL implements IRepositorioCliente
         $email_usuario = $usuario->getEmailusuario();
         $senha_usuario = $usuario->getSenhausuario();
 
-        $sql = "INSERT INTO usuarios (id_usuario,nome_usuario,email_usuario,senha_usuario) VALUES ('$id_usuario','$nome_usuario','$email_usuario','$senha_usuario')";
+        $sql = "INSERT INTO usuario (id_usuario,nome_usuario,email_usuario,senha_usuario) VALUES ('$id_usuario','$nome_usuario','$email_usuario','$senha_usuario')";
         echo $sql;
         $this->conexao->executarQuery($sql);
     }
