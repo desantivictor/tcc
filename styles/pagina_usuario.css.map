@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,OAAO,EAAE,IAAI;CAEhB",
+    "sources": [
+        "pagina_usuario.scss"
+    ],
+    "names": [],
+    "file": "pagina_usuario.css"
+}
