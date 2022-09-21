@@ -135,6 +135,14 @@ body {
             z-index: 0;
             margin: 50px 0!important;
         }
+        .splide__pagination {
+            counter-reset: pagination-num;
+          }
+          
+          .splide__pagination__page:before {
+            counter-increment: pagination-num;
+            content: counter( pagination-num );
+          }
     }
 
     /* comentarios */
@@ -193,6 +201,13 @@ body {
             transform: translate(0);
         }
     }
+    .area_comentarios{
+        
+        .comentarios{
+            flex-wrap: wrap;
+        }
+    }
+
 }
 
 @keyframes navLinkFade {
@@ -205,3 +220,4 @@ body {
         transform: translateX(0);
     }
 }
+

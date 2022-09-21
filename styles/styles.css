@@ -508,6 +508,15 @@ body {
   margin: 50px 0 !important;
 }
 
+.container .about .splide__pagination {
+  counter-reset: pagination-num;
+}
+
+.container .about .splide__pagination__page:before {
+  counter-increment: pagination-num;
+  content: counter(pagination-num);
+}
+
 .container .area_comentarios {
   margin: 30px;
   margin-top: 250px;
@@ -574,6 +583,10 @@ body {
   .navbar .nav-list.active {
     -webkit-transform: translate(0);
             transform: translate(0);
+  }
+  .area_comentarios .comentarios {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 

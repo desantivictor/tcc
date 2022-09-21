@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
                     <div class="line3"></div>
                 </div>
                 <ul class="nav-list">
-                    <li><a href="../index2.html">Inicio</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
                     <li><a href="#">Sobre nós</a></li>
                     <li><a href="./mostroario.html">Quero adotar</a></li>
                     <li><a href="./cadastro_animal.html">Quero divulgar um animal</a></li>
@@ -44,6 +44,7 @@
                     <option value="macho">Macho</option>
                     <option value="Femea">Femêa</option>
                 </select>
+                
                 <p>Porte</p>
                 <select name="porte_animal" id="" >
                     <option disabled="disabled" selected="select" value="">Selecione o porte do animal</option>
@@ -110,9 +111,11 @@
                     </option>
                 </select>
                 <p>Cidade</p>
-                <input type="text" name="cidade_animal" placeholder="Digite seu numero">
+                <input type="text" name="cidade_animal" placeholder="Cidade onde o animal está">
                 <p>Data a qual você encontrou o animal</p>
                 <input type="date" name="data_animal" id="">
+                <p>coloque imagens do animal</p>
+                <input type="file" id="files" name="files" multiple>
                 <p>Sobre o animal</p>
                 <textarea name="sobre_animal" cols="30" rows="10" ></textarea>
                 <button class="btn">concluir</button>
