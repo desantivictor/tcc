@@ -95,7 +95,32 @@ body {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
-    padding-top: 80px;
+    padding-top: 50px;
+    .titulo_carrosel{
+        padding: 60px;
+        text-align: center;
+        h1{
+            font-size: 40px;
+        }
+    }
+    /* carrosel */
+    .carrosel{
+        margin: 0 auto;
+        width: 80% ;
+        display: flex;
+        align-items: center;
+        
+        .splide__slide{
+            img {
+            border-radius: 30px;
+            width: 100%;
+            padding: 0;
+            height:auto;
+            object-fit: cover;
+           
+            }
+        }
+    }
     /*------Sessão sobre nós-------*/
     .about {
         display: flex;
@@ -130,19 +155,8 @@ body {
                 height: 400px;
             }
         }
-        /* carrosel */
-        .splide {
-            z-index: 0;
-            margin: 50px 0!important;
-        }
-        .splide__pagination {
-            counter-reset: pagination-num;
-          }
-          
-          .splide__pagination__page:before {
-            counter-increment: pagination-num;
-            content: counter( pagination-num );
-          }
+        
+    
     }
 
     /* comentarios */

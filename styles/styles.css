@@ -442,9 +442,39 @@ body {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 50px;
+  /* carrosel */
   /*------Sessão sobre nós-------*/
   /* comentarios */
+}
+
+.container .titulo_carrosel {
+  padding: 60px;
+  text-align: center;
+}
+
+.container .titulo_carrosel h1 {
+  font-size: 40px;
+}
+
+.container .carrosel {
+  margin: 0 auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .carrosel .splide__slide img {
+  border-radius: 30px;
+  width: 100%;
+  padding: 0;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container .about {
@@ -465,7 +495,6 @@ body {
           flex-direction: row;
   margin-right: 15px;
   margin-bottom: 250px;
-  /* carrosel */
 }
 
 .container .about .lado_texto {
@@ -501,20 +530,6 @@ body {
     width: 100%;
     height: 400px;
   }
-}
-
-.container .about .splide {
-  z-index: 0;
-  margin: 50px 0 !important;
-}
-
-.container .about .splide__pagination {
-  counter-reset: pagination-num;
-}
-
-.container .about .splide__pagination__page:before {
-  counter-increment: pagination-num;
-  content: counter(pagination-num);
 }
 
 .container .area_comentarios {
