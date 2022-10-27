@@ -1,3 +1,4 @@
+<?php session_start(); $_SESSION['log']=""; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../imagens/favicon.png">
-    <title>entrar</title>
+    <title>cadastre-se</title>
 </head>
 <body>
     <section class="main">
@@ -20,12 +21,13 @@
                 <div class="logo">
                     <img src="../imagens/logo.png" alt="">
                 </div>
-                <form action=""method = "post">
+                <form action="../conectar/incluiusuario.php"method = "post">
+                    <input type="text" required name="nome" placeholder="nome" >
                     <input type="email" required name="email" placeholder="email">
-                    <input type="password" required name="password" placeholder="senha">
+                    <input type="password" required name="senha" placeholder="senha">
                     <button class="btn">entrar</button>
-                    <a href="cadastro.html">cadastre-se</a>
-                    <a href="../index.html">voltar</a>
+                    <p>ja possui uma conta?<a href="./login.html">Cadastrar</a></p>
+                    <a href="../index.php">voltar</a>
                 </form>
         </div>
     </section>
