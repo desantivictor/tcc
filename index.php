@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,11 +17,11 @@
     <title>Melhor amigo</title>
 </head>
 <body>
-    <div class="navbar">
-        <header>
+    <header>
+        <div class="navbar">
             <nav>
-                <a class="logo" href="index.html">
-                    <img src="./imagens/logo2.png" alt="">
+                <a class="logo" href="#">
+                    <img src="./imagens/logo2.png" alt="" style="width: 200px;">
                 </a>
                 <div class="mobile-menu">
                     <div class="line1"></div>
@@ -30,20 +29,18 @@
                     <div class="line3"></div>
                 </div>
                 <ul class="nav-list">
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="./pages/mostroario.html">Quero adotar</a></li>
-                    <li><a href="./pages/login.html">Quero divulgar um animal</a></li>
-                    <li><a href="./pages/login.html">Entrar</a></li>
-                    <li><a href="./pages/cadastro.html">Cadastre-se</a></li>
-
+                    <li><a href="./pages/mostroario.php">Quero adotar</a></li>
+                    <li><a href="./pages/login.php">Quero divulgar um animal</a></li>
+                    <li><a href="./pages/login.php">Entrar</a></li>
+                    <li><a href="./pages/cadastro.php">Cadastre-se</a></li>
                 </ul>
             </nav>
-        </header>
-        <script src="./barra_navegação/mobile_navbar.js"></script>
-    </div>
+            <script src="./barra_navegação/mobile_navbar.js"></script>
+        </div>
+    </header>
     <div class="header">
         <p> As melhores amizades</p>
-        <a href="./pages/mostroario.html">
+        <a href="./pages/mostroario.php">
             <button class="btn">Quero adotar</button>
         </a>
     </div>
@@ -56,30 +53,41 @@
             <div class="lado_imagem">
             </div>
         </section>
-        <section class="splide" style="margin: 50px 0;" aria-label="Splide Basic HTML Example">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide">
-                        <a href="pages/login.html">
-                            <img src="imagens/Slide 1.png">
-                            <h2 style="text-align: center; position: relative; left: 10px; padding: 10px; margin: 10px;">Se cadastre em nosso site</h2>
-                        </a>
-                    </li>
-                    <li class="splide__slide">
-                        <a href="pages/mostroario.html">
-                            <img src="imagens/Slide 2.png">
-                            <h2 style="text-align: center; position: relative; left: 10px; padding: 10px; margin: 10px;">Escolha seu novo melhor amigo</h2>
-                        </a>
-                    </li>
-                    <li class="splide__slide">
-                        <a href="pages/mostroario.html">
-                            <img src="imagens/Slide 3.png">
-                            <h2 style="text-align: center; position: relative; left: 10px; padding: 10px; margin: 10px;">Busque seu amigo</h2>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
+        <div class="titulo_carrosel">
+            <h1>Por que <span class="destaque">adotar?</span></h1>
+        </div>
+        <section class="carrosel">
+            <section class="splide"  aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <a href="/pages/mostroario.php">
+                                <img src="imagens/cachorro_rua.jpg">
+                                <h2 style="text-align: center; position: relative; left: 10px; padding: 10px; margin: 10px;">você nos tira das ruas</h2>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="/pages/mostroario.php">
+                                <img src="imagens/cachorro e cara.jpg">
+                                <h2 style="text-align: center; position: relative; left: 10px; padding: 10px; margin: 10px;">seremos grandes companheiros por toda a vida </h2>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="/pages/mostroario.php">
+                                <img src="imagens/cachorro_idosa.jpg">
+                                <h2 style="text-align: center; position: relative; left: 10px; padding: 10px; margin: 10px;">estarei sempre ao seu lado</h2>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="/pages/mostroario.php">
+                                <img src="imagens/cachorro_flor.jpg">
+                                <h2 style="text-align: center; position: relative; left: 10px; padding: 10px; margin: 10px;">posso fazer parte de sua familia?</h2>
+                            </a>
+                        </li>
+    
+                    </ul>
+                </div>
+            </section>
         </section>
         <div class="area_comentarios">
             <h1>Pessoas que <span class="destaque">adotaram</span></h1>
@@ -112,8 +120,11 @@
 <script>
     new Splide('.splide').mount();
     var splide = new Splide('.splide', {
-        perPage: 3,
-        rewind: true,
+        perPage: 1,
+        padding: 0,
+        cover      : true,
+        heightRatio: 0.5,
+        type:loop,
         breakpoints: {
             770: {
                 perPage: 2,

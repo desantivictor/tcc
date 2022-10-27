@@ -114,7 +114,7 @@ body {
   -webkit-box-pack: first baseline;
       -ms-flex-pack: first baseline;
           justify-content: first baseline;
-  padding: 100px 30px;
+  padding: 150px 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -390,6 +390,7 @@ body .main .lado_txt form .btn:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-top: 100px;
 }
 
 .main .lado_txt {
