@@ -501,6 +501,9 @@ body {
   width: 50%;
   min-width: 500px;
   padding-bottom: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
@@ -516,6 +519,7 @@ body {
 
 .container .about .lado_texto p {
   margin-top: 15px;
+  font-size: larger;
 }
 
 .container .about .lado_imagem {
