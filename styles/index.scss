@@ -190,7 +190,7 @@ body {
 /* adaptaçã para celular */
 @media (max-width: $quebra_tablet) {
     .navbar {
-        .nav-list {
+        .nav-list {z
             z-index: 1;
             position: absolute;
             top: 8vh;
